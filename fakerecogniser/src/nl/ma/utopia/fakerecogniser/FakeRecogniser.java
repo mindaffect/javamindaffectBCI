@@ -88,7 +88,7 @@ public class FakeRecogniser implements Runnable  {
     enum ExptPhases { ELECTRODEQUALITY, CALIBRATE, PREDICTION, IDLE };
     Random rng=null;
     int curTargetIdx =-1; // index in objIDs for currently selected target
-    float curPerr=0; // current estimated target error
+    float[] tgt_score=new float[256];
     float signalStr=1f/60f; // approx 60 stimuli to hit perfect decoding
     float noiseStr =signalStr*2; // noise...
     String curMode=null;
@@ -167,7 +167,6 @@ public class FakeRecogniser implements Runnable  {
                     // clear the prediction state
                     objIDs=null;
                     curTargetIdx =-1;
-                    curPerr=-1;
                     trialEpochs=1; // bodge only resetart once
                 }
                 // identify a new targetIdx
@@ -176,15 +175,38 @@ public class FakeRecogniser implements Runnable  {
                     // pick a new target
                     curTargetIdx = rng.nextInt(objIDs.length);
                     System.out.println("Set target: #" + curTargetIdx + "="+objIDs[curTargetIdx]);
-                    curPerr=1.0f;
+                    for ( int oi=0; oi<tgt_score.length; oi++) tgt_score[oi]=0; // also zeros the score
                 }
                 if ( objIDs!=null
                         && curTargetIdx >=0 && curTargetIdx<objIDs.length
                         && trialEpochs>otrialEpochs ) {
-                    // update Perr
-                    float delta = rng.nextFloat()*noiseStr+signalStr;
-                    if( VERBOSITY>2 ) System.out.println("Delta:"+delta);
-                    curPerr = curPerr - delta;
+                    // update summed score
+		    float max_score=-99999999;
+		    if ( VERBOSITY>3 ) System.out.print("Score:");
+		    for ( int oi=0; oi<objIDs.length; oi++){
+			tgt_score[oi] += rng.nextFloat()*noiseStr;
+			if (oi==curTargetIdx) // include the signal amplitude
+			    tgt_score[oi] += signalStr;
+			if ( VERBOSITY>3 ) System.out.print(objIDs[oi] + "=" + tgt_score[oi] + " ");
+			max_score = max_score<tgt_score[oi]? tgt_score[oi] : max_score;
+		    }
+		    if ( VERBOSITY>3 ) System.out.println();
+		    // convert to probability via. soft-max, in numerically robust way
+		    float summed_score=0;
+		    float[] ptgt = new float[objIDs.length];
+		    // first compute the raw exp
+		    for ( int oi=0; oi<objIDs.length; oi++){
+			ptgt[oi] = (float)Math.exp(tgt_score[oi]-max_score);
+			summed_score += ptgt[oi];
+		    }
+		    if ( VERBOSITY>3 ) System.out.print("Ptgt:");
+		    // normalize to make probabilities
+		    for ( int oi=0; oi<objIDs.length; oi++){
+			ptgt[oi] = ptgt[oi] / summed_score;
+			if ( VERBOSITY>3 ) System.out.print(objIDs[oi] + "=" + ptgt[oi] + " ");
+		    }
+		    if ( VERBOSITY>3 ) System.out.println();
+		    float curPerr = 1 - ptgt[curTargetIdx];
                     // bound check
                     if ( curPerr > 1.0f ) curPerr=1.0f;
                     if ( curPerr < 0.0f ) curPerr=0.0f;
@@ -192,6 +214,9 @@ public class FakeRecogniser implements Runnable  {
                         PredictedTargetProb ptp = new PredictedTargetProb(utopiaClient.gettimeStamp(),objIDs[curTargetIdx],curPerr);
                         if (VERBOSITY>1 ) System.out.println("Prediction:" + ptp + "-> server");
                         utopiaClient.sendMessage(ptp);
+			PredictedTargetDist ptd = new PredictedTargetDist(utopiaClient.gettimeStamp(),objIDs,ptgt);
+			if (VERBOSITY>0 ) System.out.println("PredDist:"+ptd+"-> server");
+			utopiaClient.sendMessage(ptd);
                     } catch ( java.io.IOException ex ){
                     }
                 }
