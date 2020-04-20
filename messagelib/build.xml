@@ -1,0 +1,60 @@
+<project name="UtopiaServer" basedir="." default="main">
+  
+  <!-- Set the default java version to 1.6 to maximise compatability over OS/versions -->
+  <property name="ant.build.javac.source" value="1.6"/>
+  <property name="ant.build.javac.target" value="1.6"/>
+
+    <property name="src.dir"     value="src"/>
+    <property name="build.dir"   value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="jar.dir"     value="."/>
+    <property name="doc.dir"     value="doc"/>
+    <property name="main-class"  value="nl.ma.utopiaserver.${ant.project.name}"/>
+    
+	 <!-- Any library jar's we depend on? -->
+	 <property name="lib.dir"     value="lib"/>
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${lib.dir}"/>
+        <javac srcdir="${src.dir}" 
+					destdir="${classes.dir}" 
+					classpathref="classpath" 
+					debug="on"
+					debuglevel="lines,vars,source"/>
+	 </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar">
+			 <fileset dir="${classes.dir}" includes="**//*.class"/>
+			 <fileset dir="${src.dir}" includes="*.java"/>
+          <manifest>
+            <attribute name="Main-Class" value="${main-class}"/>
+          </manifest>			 
+        </jar>
+        <copy file="${jar.dir}/${ant.project.name}.jar" todir="."/>
+    </target>
+
+    <target name="run" depends="jar">
+      <java fork="true" classname="${main-class}">
+        <classpath>
+			 <path refid="classpath"/>
+			 <path location="${jar-name}"/>
+        </classpath>
+      </java>
+    </target>
+
+    <!-- Generate javadocs for current project into ${doc.dir} -->
+      <target name="doc" description="generate documentation">
+	     <javadoc sourcepath="${src.dir}" destdir="${doc.dir}"/>
+   </target>
+
+    <target name="clean">   <delete dir="${build.dir}"/>  </target>
+    <target name="build" depends="jar"/>
+    <target name="clean-build" depends="clean,build"/>
+    <target name="main" depends="build"/>
+</project>

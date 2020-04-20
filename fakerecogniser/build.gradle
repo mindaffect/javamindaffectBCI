@@ -1,0 +1,43 @@
+/**
+ * This line applies the com.android.application plugin. Note that you should
+ * only apply the com.android.application plugin. Applying the Java plugin as
+ * well will result in a build error.
+ */
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+repositories {
+}
+
+/**
+ * This dependencies block includes any dependencies for the project itself. The
+ * following line includes all the JAR files in the libs directory.
+ */
+dependencies {
+    // Add other library dependencies here (see the next step)
+    compile fileTree( dir: '../messagelib', include: 'UtopiaServer.jar')
+}
+
+sourceSets {
+    main {
+        //manifest.srcFile 'Manifest.xml'
+        java.srcDirs = ['src']
+        resources.srcDirs = ['src']
+    }
+}
+
+jar {
+   baseName = 'fakerecogniser'
+   manifest {
+      attributes 'Main-Class' : 'nl.ma.utopia.fakerecogniser.FakeRecogniser',
+                 'Class-Path': configurations.runtime.files.collect { "$it.name" }.join(' ')
+   }
+   destinationDir = file("$rootDir")
+}
+
+
+apply plugin: 'application'
+
+mainClassName = 'nl.ma.utopia.fakerecogniser.FakeRecogniser'

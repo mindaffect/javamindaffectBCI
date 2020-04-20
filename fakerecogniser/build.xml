@@ -1,0 +1,63 @@
+<project name="FakeRecogniser" basedir="." default="main">
+
+  <!-- Set the default java version to 1.5 to maximise compatability over OS/versions -->
+  <property name="ant.build.javac.source" value="1.6"/>
+  <property name="ant.build.javac.target" value="1.6"/>
+
+    <property name="src.dir"     value="src"/>
+    <property name="build.dir"   value="build"/>
+    <property name="doc.dir"   value="doc"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="jar.dir"     value="."/>
+    <property name="main-class"  value="nl.ma.utopia.fakerecogniser.FakeRecogniser"/>
+	 <!-- <property name="buffer.dir"  value="${build.dir}/../"/> -->
+
+    <property name="lib.dir"     value="lib"/>
+    <path id="classpath">
+      <fileset dir="${lib.dir}" includes="**/*.jar"/>
+      <fileset dir="../messagelib/" includes="UtopiaServer.jar"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${lib.dir}"/>
+        <javac srcdir="${src.dir}" 
+					destdir="${classes.dir}" 
+					classpathref="classpath" 
+					debug="on"
+					debuglevel="lines,vars,source"
+					/>
+	 </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			 <fileset dir="${classes.dir}"/>
+			 <fileset dir="${src.dir}" includes="**/*.java"/>
+          <manifest>
+            <attribute name="Main-Class" value="${main-class}"/>
+          </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+      <java fork="true" classname="${main-class}">
+        <classpath>
+			 <path refid="classpath"/>
+			 <path location="${jar.dir}/${ant.project.name}.jar"/>
+        </classpath>
+      </java>
+    </target>
+
+    <target name="doc">
+	    <javadoc sourcepath="${src.dir}" destdir="${doc.dir}"/>
+    </target>
+
+    <target name="build" depends="jar"/>
+    <target name="clean-build" depends="clean,jar"/>
+    <target name="main" depends="jar"/>
+</project>

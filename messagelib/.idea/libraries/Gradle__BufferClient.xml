@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: BufferClient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../resources/eeg/buffer/java/BufferClient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

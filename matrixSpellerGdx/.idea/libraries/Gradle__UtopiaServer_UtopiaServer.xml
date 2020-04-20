@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: UtopiaServer.UtopiaServer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/UtopiaServer/UtopiaServer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

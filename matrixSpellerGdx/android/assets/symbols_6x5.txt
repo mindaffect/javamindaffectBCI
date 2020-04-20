@@ -1,0 +1,10 @@
+# Simple screen layout.  N.B. dont use , as separator
+# format is: objID:text ,
+# where objID is id to use for this symbol
+#       text is the symbol text
+#       , is the separator between symbols
+a,b,c,d,e,f
+g,h,i,j,k,l
+m,n,l,p,q,r
+s,t,u,v,w,x
+y,z,.,-,_,<-

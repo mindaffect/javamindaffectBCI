@@ -1,0 +1,3 @@
+#!/bin/bash
+cd `dirname ${BASH_SOURCE[0]}`
+exec java -Xmx64m -cp ../messagelib/UtopiaServer.jar:utopia2output.jar nl.ma.utopia.utopia2output.Utopia2Output $@

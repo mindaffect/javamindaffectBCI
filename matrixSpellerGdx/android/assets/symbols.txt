@@ -1,0 +1,7 @@
+# Simple screen layout.
+# format is: objID:text ,
+# where objID is id to use for this symbol
+#       text is the symbol text
+#       , is the separator between symbols
+50:+,52:+,51:+
+#53:+,54:+,55:+

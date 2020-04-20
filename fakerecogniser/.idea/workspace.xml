@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08db092d-d6cf-49ee-9780-dc49a2e54ec7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../csharp/unityPresentation/bin/Utopia_Interface.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../../csharp/unityPresentation/bin/Utopia_Interface.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeRecogniser.jar" beforeDir="false" afterPath="$PROJECT_DIR$/FakeRecogniser.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fakerecogniser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fakerecogniser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/UtopiaServer/UtopiaServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/UtopiaServer/UtopiaServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/android/android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/android/android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/core/core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/core/src/nl/ma/utopia/matrix_speller/MatrixSpellerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/core/src/nl/ma/utopia/matrix_speller/MatrixSpellerGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/core/src/nl/ma/utopia/matrix_speller/screens/AddressInputScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/core/src/nl/ma/utopia/matrix_speller/screens/AddressInputScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/desktop/desktop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/desktop/desktop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matrixSpellerGdx/html/html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../matrixSpellerGdx/html/html.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../messagelib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../messagelib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/cache.properties.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../utopia2ft/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utopia2ft/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utopia2ft/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/messagelib/lettermatrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/messagelib/lettermatrix.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+        <option value="$PROJECT_DIR$/.idea/runConfigurations.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="698" />
+    <option name="y" value="114" />
+    <option name="width" value="1332" />
+    <option name="height" value="907" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fakerecogniser" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08db092d-d6cf-49ee-9780-dc49a2e54ec7" name="Default Changelist" comment="" />
+      <created>1579601858321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579601858321</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="698" y="114" width="1332" height="907" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32978722" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.32988358" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="WIFI ADB ULTIMATE" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
