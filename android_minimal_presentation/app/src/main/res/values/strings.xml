@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MinimalPresentation</string>
+    <string name="welcomeText">Welcome to the mindaffectBCI.\nConnecting to the decoder.\n\nPlease wait.</string>
+    <string name="wait_performance">Please wait while getting calibration performance.\n\nTouch to continue.</string>
+    <string name="calibrate_performance_template">Calibration Performance: %f\n\nTouch to continue.</string>
+    <string name="finish_text">Thanks for participating! \n\nTouch to finish.</string>
+    <string name="prediction_instruct">Now we move to PREDICTION.\nGreen=Cue\nBlue=Feedback\n\nTouch to begin.</string>
+    <string name="calibrate_instruct">About to begin calibration.\nLook at the GREEN highlighed letter.\n\nTouch to begin.</string>
+</resources>
